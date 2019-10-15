@@ -1,0 +1,20 @@
+-- POSTGRESQL supports a number of constraints
+-- A constraint is a special property that we can apply to a column
+-- which will limit the valid data that can be supplied to the column
+-- in addition to the limitations of the data type itself.
+
+-- primary key - unique identifier for each row. any column(s) marked primary key
+--				must be unique and must not be null.
+-- foreign key - a relationship to a row elsewhere based on that rows ID value.
+--				constraints valid values to the valid IDs in the referenced
+--				table.
+--   not null  - column cannot hold null values. Constrains values in that null
+--					is not valid.
+--  unique	   - column or column group data must be unique within the column or
+--				composite relation. Constrains possible values in that values which
+--				already exist are no longer valid for new rows.
+--  CHECK      - Accepts a condition, and data will only be considered valid if the
+--				expression evaluates to true. Constrains valid data in that it allows
+-- 				allows for arbitrary expressions to enforce validity.
+--  EXCLUDE    - Allows an expression which should not return true when run against
+--				all other records in the table. Rarely used. 
