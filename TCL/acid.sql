@@ -23,4 +23,4 @@
 --		durability. Data should be durable. Your data should survive
 --		anything that might destroy it. Whether that be a fire, a flood,
 --		a comet hitting the earth, godzilla. The data should survive. 
---		If you're a DBA, Godzilla is not an excuse for data loss. 
+--		If you're a DBA, Godzilla is not an excuse for data loss.
