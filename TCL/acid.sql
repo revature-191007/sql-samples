@@ -1,0 +1,26 @@
+-- Properties of a transaction
+-- ACID
+
+-- A.C.I.D.
+-- atomic
+--	Indivisible - A transaction cannot be effectively divided in
+-- 			any way. The transaction either happens as a whole. Or is 
+--			rollback and effectively never took place. 
+-- consistent - A transaction should always move the state of our
+--			our data from one valid state to another valid state.
+--			This means any rules our application definse regarding
+--			regarding the validity of data must be maintained.
+-- isolated - A transaction should occur *as if* they are occurring
+--			synchronously, one at a time. Meaning a transaction should
+--			be able to interact with changes made by another ongoing
+--			ongoing transaction until a commit occurs.
+-- durable - once a transaction is completed, it's now the new
+--			state of the application. You should not attempt to undo
+--			a committed transaction. Transactions should not be committed
+--			until you are certain the new state is valid and correct.
+
+--	In addition, many talk about planning for survival of data with 
+--		durability. Data should be durable. Your data should survive
+--		anything that might destroy it. Whether that be a fire, a flood,
+--		a comet hitting the earth, godzilla. The data should survive. 
+--		If you're a DBA, Godzilla is not an excuse for data loss. 
